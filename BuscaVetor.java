@@ -14,7 +14,6 @@
  */
 
 package BuscaBinaria;
-import BubbleSort.OrdenaVetor;
 import java.util.Random;
 
 public class BuscaVetor {
@@ -28,7 +27,7 @@ public class BuscaVetor {
             System.out.println(vet[i]);
         }
         System.out.println("-----------------------------------------------");
-        BubbleSort.OrdenaVetor.bubbleSort(vet); //Organiza o Vetor
+        OrdenaVetor.bubbleSort(vet); //Organiza o Vetor
         
         if((buscaBinaria(3,vet)) == -1){
             System.out.println("Valor não encontrado");
