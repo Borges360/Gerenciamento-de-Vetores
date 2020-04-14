@@ -39,6 +39,32 @@ public class OrdenaVetor {
         
     }
     
+    public static int [] bubbleSort ( int [] vetorBubbleSort ) {     
+		
+		int i, j, temp; 
+        boolean swapped; 
+        
+        int n = vetorBubbleSort.length;
+        for (i = 0; i < n - 1; i++)  
+        { 
+            swapped = false; 
+            for (j = 0; j < n - i - 1; j++)  
+            { 
+                if (vetorBubbleSort[j] > vetorBubbleSort[j + 1])  
+                { 
+                    temp = vetorBubbleSort[j]; 
+                    vetorBubbleSort[j] = vetorBubbleSort[j + 1]; 
+                    vetorBubbleSort[j + 1] = temp; 
+                    swapped = true; 
+                } 
+            } 
+  
+            if (swapped == false) 
+                break; 
+        }
+		return vetorBubbleSort; 
+	}
+    
     public static int[] insertion(int [] vetor){
         int j,aux;
         
